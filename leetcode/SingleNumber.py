@@ -15,6 +15,9 @@ Input: [4,1,2,1,2]
 Output: 4
 '''
 
+# a) XOR of a number with itself is 0.
+# b) XOR of a number with 0 is number itself.
+
 
 class Solution:
 
