@@ -19,9 +19,11 @@ time, when the same count values appear again, we use the new index subtracting 
 to calculate the length of a subarray. A variable max_length is used to to keep track of the
 current maximum length.
 '''
+
+
 class Solution:
     def findMaxLength(self, nums):
-        dic = {0:0}
+        dic = {0: 0}
         curr_sum = 0
         max_len = 0
         for index, num in enumerate(nums, 1):
@@ -33,7 +35,8 @@ class Solution:
                 max_len = max(max_len, index - dic[curr_sum])
             else:
                 dic[curr_sum] = index
-        return max_l
+        return max_len
 
-Solution().findMaxLength(self, [0,0,1,0,0,0,1,1])
+
+print(Solution().findMaxLength([0, 0, 1, 0, 0, 0, 1, 1]))
 
